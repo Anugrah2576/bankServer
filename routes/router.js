@@ -18,11 +18,11 @@ router.post('/bankserver/user-login',logic.login)
 
 //user-profile
 
-router.get('/bankserver/user-profile/:acno',jwtMiddleware,logic.getProfile)
+router.get('/bankserver/user-profile/:acno',logic.getProfile)
 
 //balance get
 
-router.get('/bankserver/user-balance/:acno',jwtMiddleware,logic.getBalance)
+router.get('/bankserver/user-balance/:acno',logic.getBalance)
 
 //money transfer
 
